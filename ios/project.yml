@@ -49,7 +49,7 @@ targets:
       - WebSocketUploader.swift
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.mx.radar.PacketTunnel
+        PRODUCT_BUNDLE_IDENTIFIER: com.mx.radar.app.PacketTunnel
         CODE_SIGN_ENTITLEMENTS: Extension/PacketTunnel.entitlements
         INFOPLIST_FILE: Extension/Info.plist
     entitlements:
