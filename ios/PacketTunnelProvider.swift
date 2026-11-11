@@ -102,7 +102,7 @@ final class PacketTunnelProvider: NEPacketTunnelProvider {
         let host = remote.components(separatedBy: ":").dropLast().joined(separator: ":")
         let portStr = remote.components(separatedBy: ":").last ?? ""
         guard NWEndpoint.Port(portStr) != nil else { return nil }
-        let ep = NWHostEndpoint(host: host, port: portStr)
+        let ep = NWHostEndpoint(hostname: host, port: portStr)
         let session = createUDPSession(to: ep, from: nil)
         session.setReadHandler { [weak self] (datagrams: [Data]?, err: Error?) in
             guard let self, err == nil, let datagrams else { return }
