@@ -104,12 +104,12 @@ final class PacketTunnelProvider: NEPacketTunnelProvider {
         guard NWEndpoint.Port(portStr) != nil else { return nil }
         let ep = NWHostEndpoint(hostname: host, port: portStr)
         let session = createUDPSession(to: ep, from: nil)
-        session.setReadHandler { [weak self] (datagrams: [Data]?, err: Error?) in
+        session.setReadHandler({ [weak self] (datagrams: [Data]?, err: Error?) in
             guard let self, err == nil, let datagrams else { return }
             for d in datagrams {
                 self.processInbound(d, local: local, remote: remote)
             }
-        }
+        }, maxDatagrams: 16)
         udpSessions[key] = session
         return session
     }
