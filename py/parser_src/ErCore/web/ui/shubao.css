@@ -1,0 +1,128 @@
+/* V1.1.0: compact side panels and 3D presentation controls based on 寻宝鼠.
+   Existing ER IDs/events, map geometry, coordinate transforms and update loop retained. */
+:root{--accent:#26bbff;--glass:#161616b8;--glass-hi:#ffffff0d;--hair:#ffffff1a;--blur:blur(10px);--roster-w:292px;--r-lg:8px;--r-md:6px;--r-sm:4px;--shadow:0 4px 16px #0003}
+body{font-family:Arial,'Microsoft YaHei',sans-serif}
+#roster{right:16px;top:76px;bottom:16px;width:var(--roster-w);border:1px solid #ffffff1a;border-radius:8px;background:#161616dc;backdrop-filter:blur(10px);box-shadow:0 8px 32px #0003}
+#roster .pan-head{padding:14px 16px 10px;margin:0;border-bottom:1px solid #ffffff1a;align-items:flex-start}
+#pan-name{font-size:14px;font-weight:700;color:#ffffffd3}#pan-sub{font-size:10px;color:#ffffff70}
+#roster .pan-title{flex-wrap:wrap;gap:6px}#roster .pan-title .sub{flex-basis:100%}
+.pan-sec.ops{flex:1.7 1 0}.pan-sec.loot{flex:1 1 0}.sec-head{padding:10px 14px}.sec-t{font-size:11px;color:#ffffffa6}
+.sec-t i,.grp-cnt{border-radius:30px;background:#63626270;font:10px Consolas,monospace;padding:3px 8px}
+.pan-body{scrollbar-width:thin;scrollbar-color:#ffffff30 transparent}
+.grp{padding:9px 14px 5px}.grp-name{font-size:11px;color:#ffffffa8}.grp-bar{height:11px;border-radius:0;box-shadow:none}
+.op{padding:8px 7px;margin:0 8px 6px;gap:8px;border-radius:0;background:#0000002b;border:1px solid transparent;box-shadow:none;min-height:58px}
+.op:hover{background:#00000080}.op.sel{background:#26bbff1a;border-color:#26bbff55;box-shadow:none}
+.op-av{width:32px;height:32px;min-width:32px;flex-basis:32px;border-radius:50%;padding:1px;border:1px solid #ffffff25;box-shadow:none;background:var(--c)}
+.op-av img{border-radius:50%}.op-n{font-size:12px;gap:4px;line-height:1.4;flex-wrap:wrap}.op-n .hero{font-size:10px;color:#ffffff80}
+.op-m{font-size:9px;line-height:1.5;color:#ffffff80}.op-d{font:600 14px Consolas,monospace}.op-d .du{font-size:9px}.op-z{font:10px Consolas,monospace}
+.op-hp{height:3px;border-radius:0;background:#ffffff20}.op-hp>i{border-radius:0}.badge{border-radius:3px;font-size:9px;padding:1px 4px}.badge.bot-uncertain{color:#e9bb69;border:1px solid #e9bb6966;background:#e9bb6910}
+#island{left:50%;right:auto;top:16px;transform:translateX(-50%);width:340px;min-width:0;background:#2b2828b8;border:1px solid #ffffff1a;border-radius:999px;box-shadow:0 4px 6px #0002;backdrop-filter:blur(8px)}
+#island:active{transform:translateX(-50%) scale(.98)}#island.open{min-width:0;border-radius:12px}#isl-main{gap:10px;padding:9px 12px;height:24px;box-sizing:border-box;min-height:38px}
+.isl-stat{gap:5px;padding-right:8px;border-right:1px solid #ffffff30}.isl-stat b{font:700 16px Consolas,monospace;color:#f6f7f9}.isl-stat i{font-size:10px;letter-spacing:1px;color:#ffffffa8}#isl-dot{width:5px;height:5px;animation:none}#isl-sep{display:none}#isl-near{font-size:10px}
+#viewswitch{right:calc(var(--roster-w) + 32px);top:16px;border-radius:8px;background:#161616ad}.vs-seg{border-radius:4px}.vs,.mini-tab{border-radius:4px}.vs.on,.mini-tab.on{background:#26bbff24;color:#9bdeff;box-shadow:inset 0 0 0 1px #26bbff44}
+#roster-handle{right:calc(var(--roster-w) + 16px);border-radius:4px 0 0 4px;height:48px}body.roster-hidden #roster-handle{right:0}
+#dock{border-radius:8px;background:#161616ba;border:1px solid #ffffff1a}.dock-head{border-bottom:1px solid #ffffff1a}.setting-row,.setting-group{border-radius:4px}
+#sheet-map,.glass,#playbar{backdrop-filter:blur(10px)}#playbar{border-radius:8px;background:#161616c9}#camseg{border-radius:6px;background:#161616c9}
+.gear-inline{display:inline-flex;gap:4px;vertical-align:middle}.gear-chip{display:inline-flex;align-items:center;gap:2px;color:var(--gear,#c9d1de);white-space:nowrap}.gear-chip b{font:700 9px Consolas,monospace;color:#f4f7fa}.gear-icon{display:inline-block;width:13px;height:13px;background:var(--gear,#c9d1de);-webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;mask-position:center;mask-repeat:no-repeat;mask-size:contain}.gear-icon.helmet{-webkit-mask-image:url('/ui/icons/helmet.png?v=1.1.0');mask-image:url('/ui/icons/helmet.png?v=1.1.0')}.gear-icon.armor{-webkit-mask-image:url('/ui/icons/armor.png?v=1.1.0');mask-image:url('/ui/icons/armor.png?v=1.1.0')}.gear-icon.bag{-webkit-mask-image:url('/ui/icons/bag.png?v=1.1.0');mask-image:url('/ui/icons/bag.png?v=1.1.0')}.gear-icon.rig{-webkit-mask-image:url('/ui/icons/rig.png?v=1.1.0');mask-image:url('/ui/icons/rig.png?v=1.1.0')}.grb{height:24px!important;gap:5px!important;padding:0!important;border-radius:0!important;background:transparent!important;border:0!important;box-shadow:none!important}.grb .gear-chip{padding:0;background:transparent}.grb .gear-icon{width:18px;height:18px}.grb .gear-chip b{font-size:15px;color:var(--gear,#f4f7fa);text-shadow:-1.5px 0 #000,1.5px 0 #000,0 -1.5px #000,0 1.5px #000,-1.5px -1.5px #000,1.5px -1.5px #000,-1.5px 1.5px #000,1.5px 1.5px #000}
+#gateway-diagnostics{background:#161616c9;border:1px solid #ffffff1a;border-radius:8px}
+@media(max-width:720px){#roster{right:8px;left:auto;top:92px;bottom:70px;width:min(304px,calc(100vw - 32px));max-height:70vh}#island{left:50%;right:auto;top:10px;width:min(340px,calc(100vw - 16px))}#viewswitch{right:8px;top:54px}#roster-handle{right:calc(min(304px,100vw - 32px) + 8px)}#dock{max-width:calc(100vw - 28px)}}
+
+/* V1.1.0: fixed category rail, independently scrolling content, compact toggles. */
+:root{--tools-w:360px}
+#dock{left:12px;top:12px;bottom:12px;border-radius:12px;background:#111b25ed;box-shadow:0 12px 40px #0005}
+#dock>.pan-head{padding:16px 16px 14px;margin:0;border-bottom:1px solid #ffffff12}
+#dock>.pan-head .pan-title{font-size:15px;letter-spacing:.5px}
+#dock-handle{left:calc(var(--tools-w) + 12px);height:46px;border-radius:0 6px 6px 0}
+.dock-layout{display:flex;flex:1;min-height:0;overflow:hidden}
+.dock-tabs{width:76px;flex:none;display:flex;flex-direction:column;gap:6px;padding:14px 7px;border-right:1px solid #ffffff0e;background:#060d1529}
+.dock-tabs button{border:1px solid transparent;border-radius:7px;background:transparent;color:#889eae;font:600 12px 'Microsoft YaHei',sans-serif;padding:13px 0;cursor:pointer;transition:background .15s,color .15s}
+.dock-tabs button:hover{background:#ffffff09;color:#e8f2fb}
+.dock-tabs button[aria-selected=true]{color:#8adaff;background:#26bbff16;border-color:#26bbff32;box-shadow:inset 2px 0 #26bbff}
+.dock-tabs button:focus-visible,#dock input:focus-visible,#dock button:focus-visible,#dock select:focus-visible{outline:2px solid #64d1ff;outline-offset:2px}
+.dock-content{flex:1;min-width:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#ffffff25 transparent}
+.dock-page{padding:17px 14px 20px}.dock-page[hidden]{display:none!important}
+.dock-page-head{margin-bottom:18px}.dock-page h2{font-size:15px;font-weight:650;color:#e7f1f8;margin:0 0 6px}.dock-page-head p{font-size:11px;color:#8298a8;line-height:1.6;margin:0}
+.dock-group{margin-bottom:18px}.dock-group h3{font-size:10px;letter-spacing:1px;color:#738b9d;font-weight:600;margin:0 0 9px}
+.dock-controls{background:#ffffff03;border:1px solid #ffffff0c;border-radius:8px;padding:3px 10px}
+#dock .dock-controls .row{margin:0;padding:11px 0;border-bottom:1px solid #ffffff08}
+#dock .dock-controls .row:last-child{border-bottom:0}
+#dock .row-t{font-size:12px;font-weight:500;color:#c9d9e6}#dock .row-s{font-size:10px;color:#7b92a4;line-height:1.5;margin-top:4px}
+#dock .dock-controls .row-btn{width:100%;margin:0}.dock-controls .row-col{min-width:0}
+.dock-switches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+#dock .dock-switches .row{margin:0;padding:10px 8px;min-width:0;gap:5px;border-radius:7px;background:#ffffff04;border:1px solid #ffffff09;align-items:center}
+#dock .dock-switches .row-col{min-width:0;flex:1}#dock .dock-switches .row-t{font-size:11px;line-height:1.5}
+#dock .dock-switches .row-s{display:none}#dock .dock-switches .sw{transform:scale(.76);transform-origin:right center;flex:none;margin-left:-9px}
+#dock .dock-controls .sld{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 7px;padding:12px 0;margin:0;border-bottom:1px solid #ffffff08}
+#dock .dock-controls .sld:last-child{border-bottom:0}
+#dock .sld>span:first-child{font-size:11px!important;color:#b4c7d5!important;white-space:normal!important;grid-column:1;grid-row:1;line-height:1.5}
+#dock .sld>.v{grid-column:2;grid-row:1;font:11px Consolas,monospace;color:#75d1f8;min-width:36px;text-align:right}
+#dock .sld>input[type=range]{grid-column:1 / -1;grid-row:2;width:100%;min-width:0;margin:2px 0 4px;cursor:pointer;height:5px}
+#dock .sld>.vs-seg{grid-column:1 / -1;display:flex;width:100%;gap:2px;background:#070d143d;padding:3px;box-sizing:border-box}
+#dock .sld>.vs-seg .vs{min-width:0;flex:1;padding:7px 2px;font-size:10px}
+#dock .k{font-size:11px;color:#b4c7d5}.color-setting{gap:10px}.color-swatch{display:flex;align-items:center;gap:7px;color:#75d1f8;font:10px Consolas,monospace}.color-swatch input{width:30px;height:24px;padding:0;border:1px solid #ffffff24;border-radius:5px;background:transparent;cursor:pointer}.color-swatch input::-webkit-color-swatch-wrapper{padding:2px}.color-swatch input::-webkit-color-swatch{border:0;border-radius:3px}
+#dock .pick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:8px 0;padding:0}#dock .pick button{padding:8px 3px;font-size:11px}
+.dock-note{font-size:10px;color:#7d94a6;line-height:1.8;margin:4px 2px 0}
+#dock #gateway-diagnostics{position:static!important;flex:none;max-width:none!important;max-height:145px;overflow:auto;margin:0 12px 10px;padding:9px 10px!important;font-size:10px!important;border:1px solid #ffffff10!important;background:#0b131c!important;border-radius:6px!important}
+#dock #gateway-diagnostics summary{color:#8ba3b5;cursor:pointer}
+@media(max-width:1100px) and (min-width:901px){:root{--tools-w:330px;--roster-w:270px}#island{width:320px}.dock-tabs{width:67px}.dock-page{padding:15px 10px}}
+@media(max-width:900px){#dock{left:8px;right:auto;top:76px;bottom:72px;height:auto;width:min(360px,calc(100vw - 16px));max-width:calc(100vw - 16px);border-radius:12px;max-height:none}#dock-handle{left:calc(min(360px,100vw - 16px) + 8px)}.dock-tabs{width:68px}.dock-page{padding:14px 10px}.dock-tabs button{padding:13px 0}
+#dock:not(.up),#roster:not(.up){transform:translateY(110vh);visibility:hidden;pointer-events:none}
+#dock.up,#roster.up{transform:none;visibility:visible;pointer-events:auto}
+#roster{height:auto;max-height:none;top:76px;bottom:72px}}
+
+/* Only the left/right work panels switch theme; map and centered battle status keep their contrast. */
+body.panels-light #dock,body.panels-light #roster{background:#edf3f5f2;border-color:#a8bac6;box-shadow:0 12px 34px #00131e38;color:#172732}
+body.panels-light #dock>.pan-head,body.panels-light #roster .pan-head{border-color:#9badb73d}
+body.panels-light #dock .pan-title,body.panels-light #roster .pan-title,body.panels-light #pan-name,body.panels-light #dock .dock-page h2{color:#172732}
+body.panels-light #dock .dock-tabs{background:#dce7eb;border-color:#9fb0ba55}
+body.panels-light #dock .dock-tabs button{color:#506775}body.panels-light #dock .dock-tabs button:hover{background:#fff8;color:#172732}body.panels-light #dock .dock-tabs button[aria-selected=true]{color:#006f9f;background:#13aeea1a;border-color:#058bc944}
+body.panels-light #dock .dock-controls,body.panels-light #dock .dock-switches .row{background:#fff9;border-color:#91a8b52e}
+body.panels-light #dock .row-t,body.panels-light #dock .sld>span:first-child,body.panels-light #dock .k{color:#324b5a!important}body.panels-light #dock .row-s,body.panels-light #dock .dock-page-head p,body.panels-light #dock .dock-group h3,body.panels-light #pan-sub{color:#607a89}
+body.panels-light #roster .op{background:#ffffffa8;border-color:#7e929e20}body.panels-light #roster .op:hover{background:#fff}body.panels-light #roster .op-n,body.panels-light #roster .op-d{color:#182b36}body.panels-light #roster .op-m,body.panels-light #roster .grp-name,body.panels-light #roster .sec-t{color:#5b707c}
+body.panels-light #dock #gateway-diagnostics{background:#e1ebef!important;border-color:#8da3af55!important;color:#304854!important}
+
+/* V1.1.0: fixed three-column roster rows. Every normal row keeps one title,
+   one metadata line and one health line, so optional fields cannot shift distance. */
+:root{--roster-w:268px}
+#roster .pan-head{padding:10px 12px 8px}
+#roster .sec-head{padding:7px 10px 4px}
+#roster .grp{padding:6px 10px 3px;gap:6px}
+#roster .grp-bar{height:10px}
+#roster .grp-name{font-size:10px}
+#roster .grp-cnt,#roster .grp-near{font-size:9px}
+#roster .op{display:grid;grid-template-columns:28px minmax(0,1fr) 40px;align-items:center;column-gap:7px;min-height:46px;box-sizing:border-box;padding:5px 6px;margin:0 6px 3px;overflow:hidden}
+#roster .op.expanded{align-items:start;min-height:46px;overflow:visible}
+#roster .op-av{width:28px;height:28px;min-width:28px;flex-basis:28px;font-size:10px;grid-column:1;align-self:center}
+#roster .op-av.box{width:22px;height:22px;min-width:22px;margin:3px}
+#roster .op-ring{inset:-2px;border-width:1px;border-radius:50%}
+#roster .op-col{grid-column:2;display:grid;grid-template-rows:auto auto auto;gap:1px;min-width:0;overflow:hidden}
+#roster .op.expanded .op-col{overflow:visible}
+#roster .op-n{display:block;min-width:0;font-size:10.5px;line-height:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#roster .op-title{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#roster .op-n .hero{font-size:8.5px;margin-left:4px}
+#roster .op-m{display:flex;align-items:center;gap:3px;height:13px;min-width:0;margin:0;font-size:8px;line-height:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#roster .op-m>*{flex:none}
+#roster .op-m .bags,#roster .op-m .wp{min-width:0;overflow:hidden;text-overflow:ellipsis}
+#roster .op-sep{font-style:normal;color:var(--txt-3);opacity:.45}
+#roster .badge{font-size:7.5px;line-height:10px;padding:0 3px;border-radius:2px}
+#roster .badge.bot-confirmed{color:#ffd681;border:1px solid #e5a73180;background:#e5a73118}
+#roster .gear-inline{gap:2px}.gear-chip{gap:1px}.gear-icon{width:10px;height:10px}.gear-chip b{font-size:7.5px}
+#roster .op-r{grid-column:3;min-width:40px;width:40px;align-self:center;overflow:hidden}
+#roster .op-d{font-size:11px;line-height:13px;white-space:nowrap}
+#roster .op-d .du{font-size:7px}
+#roster .op-z{font-size:8px;line-height:10px;margin:0;white-space:nowrap}
+#roster .op-hp{height:2px;margin:1px 0 0}
+#roster .tip-r{font-size:8px;line-height:1.35;gap:5px}
+
+/* Make both 3D character color states visible as first-class controls. */
+#dock .color-setting{min-height:43px;margin:3px 0!important;padding:7px 8px!important;border:1px solid #ffffff12!important;border-radius:6px;background:#ffffff04}
+#dock .color-setting.visible{box-shadow:inset 2px 0 #49d5ff}
+#dock .color-setting.occluded{box-shadow:inset 2px 0 #ff4058}
+#dock .color-setting .row-t{font-size:11px;font-weight:650}
+#dock .color-setting .row-s{font-size:9px;margin-top:1px}
+#dock .color-swatch{gap:5px;font-size:9px}
+#dock .color-swatch input{width:38px;height:28px}
+body.panels-light #dock .color-setting{background:#fff9;border-color:#7f98a832!important}
+
+@media(max-width:1100px) and (min-width:901px){:root{--roster-w:258px}}
+@media(max-width:720px){:root{--roster-w:min(268px,calc(100vw - 32px))}#roster{width:var(--roster-w)}#roster-handle{right:calc(var(--roster-w) + 8px)}}

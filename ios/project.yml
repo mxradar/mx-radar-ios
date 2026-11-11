@@ -1,0 +1,68 @@
+# XcodeGen 工程描述。在 macOS 上运行 `xcodegen generate` 生成 .xcodeproj。
+# 依赖：brew install xcodegen
+name: MXRadar
+options:
+  bundleIdPrefix: com.mx.radar
+  deploymentTarget:
+    iOS: "15.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    IPHONEOS_DEPLOYMENT_TARGET: "15.0"
+
+targets:
+  # ---------- 主 App ----------
+  MXRadar:
+    type: application
+    platform: iOS
+    sources:
+      - AppGroup.swift
+      - ApiClient.swift
+      - TunnelManager.swift
+      - ContentView.swift
+      - App/MXRadarApp.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mx.radar.app
+        CODE_SIGN_ENTITLEMENTS: App/MXRadar.entitlements
+        INFOPLIST_FILE: App/Info.plist
+    entitlements:
+      path: App/MXRadar.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.mx.radar
+    dependencies:
+      - target: PacketTunnel
+        embed: true
+
+  # ---------- Network Extension ----------
+  PacketTunnel:
+    type: app-extension
+    platform: iOS
+    sources:
+      - AppGroup.swift
+      - PacketParser.swift
+      - PacketTunnelProvider.swift
+      - PythonBridge.swift
+      - WebSocketUploader.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mx.radar.PacketTunnel
+        CODE_SIGN_ENTITLEMENTS: Extension/PacketTunnel.entitlements
+        INFOPLIST_FILE: Extension/Info.plist
+    entitlements:
+      path: Extension/PacketTunnel.entitlements
+      properties:
+        com.apple.developer.networking.vpn.api:
+          - allow-vpn
+        com.apple.security.application-groups:
+          - group.com.mx.radar
+    info:
+      path: Extension/Info.plist
+      properties:
+        CFBundleDisplayName: MXRadar
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.networkextension.packet-tunnel
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).PacketTunnelProvider

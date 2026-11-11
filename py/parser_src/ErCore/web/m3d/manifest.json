@@ -1,0 +1,373 @@
+{
+  "axis": "gltf_x=ue_x/100, gltf_y=ue_z/100, gltf_z=ue_y/100",
+  "maps": {
+    "az3": {
+      "file": "az3.terrain0908.0ab76c3b979e35b8.glb",
+      "rev": "0ab76c3b979e35b8",
+      "bytes": 99201884,
+      "tiles": 330,
+      "tris": 9888564,
+      "verts": 6609732,
+      "yaw": 90,
+      "place": [
+        2192.0,
+        -2096.0
+      ],
+      "dy": -0.28,
+      "ground": {
+        "poi_med": 0.7,
+        "model_mode": 0.98,
+        "mode_src": "flat_slab"
+      },
+      "solve": {
+        "score": 9648.32,
+        "nominal": [
+          1975.1890625,
+          -2048.14046875
+        ],
+        "poi_containment": 1.0
+      },
+      "fill": {
+        "tiles_src": "lumen3d",
+        "chunks": 26162,
+        "corr": 15837.87,
+        "dx": 0.0,
+        "dz": 0.0,
+        "occ_cells": 76624,
+        "skip_overlap_tris": 976433,
+        "huya_offsurface": 0
+      },
+      "dropped_vertical": 0,
+      "dropped_offsurface": 0,
+      "bbox": [
+        [
+          1386.0,
+          -63.5,
+          -2909.12
+        ],
+        [
+          2627.21,
+          203.3,
+          -1037.1
+        ]
+      ],
+      "name": "AZ3",
+      "center": [
+        197518.90625,
+        -204814.046875
+      ],
+      "extent": [
+        80999.179688,
+        80831.398438
+      ],
+      "terrain_sample_stride_bytes": 4
+    },
+    "bks": {
+      "file": "bks.terrain0908.0371649608e61ef4.glb",
+      "rev": "0371649608e61ef4",
+      "bytes": 50155676,
+      "tiles": 139,
+      "tris": 5047134,
+      "verts": 3297220,
+      "yaw": 180,
+      "place": [
+        3856.0,
+        -4304.0
+      ],
+      "dy": -249.62,
+      "ground": {
+        "poi_med": -246.0,
+        "model_mode": 3.62,
+        "mode_src": "flat_slab"
+      },
+      "solve": {
+        "score": 8158.45,
+        "nominal": [
+          3800.0,
+          -4560.0
+        ],
+        "poi_containment": 1.0
+      },
+      "fill": {
+        "tiles_src": "lumen3d",
+        "chunks": 16049,
+        "corr": 17982.01,
+        "dx": 0.0,
+        "dz": 0.0,
+        "occ_cells": 33116,
+        "skip_overlap_tris": 315215,
+        "huya_offsurface": 0
+      },
+      "dropped_vertical": 0,
+      "dropped_offsurface": 0,
+      "bbox": [
+        [
+          3402.0,
+          -320.0,
+          -5183.46
+        ],
+        [
+          4280.63,
+          217.93,
+          -4032.0
+        ]
+      ],
+      "name": "巴克什",
+      "center": [
+        380000,
+        -456000
+      ],
+      "extent": [
+        60000,
+        60000
+      ],
+      "terrain_sample_stride_bytes": 4
+    },
+    "cgxg": {
+      "file": "cgxg.terrain0908.a06b48ce4803f563.glb",
+      "rev": "a06b48ce4803f563",
+      "bytes": 70694688,
+      "tiles": 488,
+      "tris": 7381701,
+      "verts": 4348544,
+      "yaw": 0,
+      "place": [
+        64.0,
+        80.0
+      ],
+      "dy": -206.08,
+      "ground": {
+        "poi_med": -205.48,
+        "model_mode": 0.6,
+        "mode_src": "flat_slab"
+      },
+      "solve": {
+        "score": 10373.58,
+        "nominal": [
+          3305.5175,
+          -6399.13875
+        ],
+        "poi_containment": 0.998
+      },
+      "fill": {
+        "tiles_src": "lumen3d",
+        "chunks": 29724,
+        "corr": 22748.36,
+        "dx": 0.0,
+        "dz": 0.0,
+        "occ_cells": 0,
+        "skip_overlap_tris": 0,
+        "huya_offsurface": 0
+      },
+      "dropped_vertical": 0,
+      "dropped_offsurface": 92,
+      "bbox": [
+        [
+          2520.0,
+          -252.22,
+          -7183.3
+        ],
+        [
+          4068.34,
+          40.75,
+          -5544.0
+        ]
+      ],
+      "name": "长弓溪谷",
+      "center": [
+        330551.75,
+        -639913.875
+      ],
+      "extent": [
+        112800,
+        112800
+      ],
+      "terrain_sample_stride_bytes": 4
+    },
+    "cxjy": {
+      "file": "cxjy.terrain0908.a21a53fc4bd9e0f8.glb",
+      "rev": "a21a53fc4bd9e0f8",
+      "bytes": 71349588,
+      "tiles": 132,
+      "tris": 7158532,
+      "verts": 4718899,
+      "yaw": 180,
+      "place": [
+        560.0,
+        -464.0
+      ],
+      "dy": -88.8,
+      "ground": {
+        "poi_med": -87.91,
+        "model_mode": 0.89,
+        "mode_src": "flat_slab"
+      },
+      "solve": {
+        "score": 4849.18,
+        "nominal": [
+          503.83464844,
+          -511.55902344000003
+        ],
+        "poi_containment": 1.0
+      },
+      "fill": {
+        "tiles_src": "lumen3d",
+        "chunks": 18531,
+        "corr": 8339.73,
+        "dx": 0.0,
+        "dz": 0.0,
+        "occ_cells": 16862,
+        "skip_overlap_tris": 572259,
+        "huya_offsurface": 0
+      },
+      "dropped_vertical": 0,
+      "dropped_offsurface": 0,
+      "bbox": [
+        [
+          252.0,
+          -188.14,
+          -795.23
+        ],
+        [
+          775.41,
+          29.87,
+          -241.35
+        ]
+      ],
+      "name": "潮汐监狱",
+      "center": [
+        50383.464844,
+        -51155.902344
+      ],
+      "extent": [
+        36596.421875,
+        36596.421875
+      ],
+      "terrain_sample_stride_bytes": 4
+    },
+    "daba": {
+      "file": "daba.terrain0908.25efaea6a4a25c3c.glb",
+      "rev": "25efaea6a4a25c3c",
+      "bytes": 51222564,
+      "tiles": 226,
+      "tris": 5293593,
+      "verts": 3219191,
+      "yaw": 0,
+      "place": [
+        -112.0,
+        -208.0
+      ],
+      "dy": -166.87,
+      "ground": {
+        "poi_med": -166.3,
+        "model_mode": 0.57,
+        "mode_src": "flat_slab"
+      },
+      "solve": {
+        "score": 3545.2,
+        "nominal": [
+          3581.556875,
+          -7501.9175
+        ],
+        "poi_containment": 1.0
+      },
+      "fill": {
+        "tiles_src": "lumen3d",
+        "chunks": 27160,
+        "corr": 21151.17,
+        "dx": 0.0,
+        "dz": 0.0,
+        "occ_cells": 0,
+        "skip_overlap_tris": 0,
+        "huya_offsurface": 0
+      },
+      "dropped_vertical": 0,
+      "dropped_offsurface": 182,
+      "bbox": [
+        [
+          2859.56,
+          -226.06,
+          -8120.54
+        ],
+        [
+          4160.31,
+          -20.97,
+          -7166.64
+        ]
+      ],
+      "name": "零号大坝",
+      "center": [
+        358155.6875,
+        -750191.75
+      ],
+      "extent": [
+        81086.304688,
+        80988.5
+      ],
+      "terrain_sample_stride_bytes": 4
+    },
+    "htjd": {
+      "file": "htjd.terrain0908.db39b5e505b6fe28.glb",
+      "rev": "db39b5e505b6fe28",
+      "bytes": 38834100,
+      "tiles": 162,
+      "tris": 3923517,
+      "verts": 2531489,
+      "yaw": 0,
+      "place": [
+        32.0,
+        -4992.0
+      ],
+      "dy": -218.19,
+      "ground": {
+        "poi_med": -219.07,
+        "model_mode": -0.88,
+        "mode_src": "flat_slab"
+      },
+      "solve": {
+        "score": 5404.46,
+        "nominal": [
+          6693.37,
+          -4464.4975
+        ],
+        "poi_containment": 1.0
+      },
+      "fill": {
+        "tiles_src": "lumen3d",
+        "chunks": 17907,
+        "corr": 18225.36,
+        "dx": 0.0,
+        "dz": 0.0,
+        "occ_cells": 0,
+        "skip_overlap_tris": 0,
+        "huya_offsurface": 0
+      },
+      "dropped_vertical": 211,
+      "dropped_offsurface": 0,
+      "bbox": [
+        [
+          6174.0,
+          -291.5,
+          -4934.34
+        ],
+        [
+          7149.55,
+          -86.85,
+          -3995.41
+        ]
+      ],
+      "name": "航天基地",
+      "center": [
+        669337,
+        -446449.75
+      ],
+      "extent": [
+        65442.871094,
+        65442.871094
+      ],
+      "terrain_sample_stride_bytes": 4
+    }
+  },
+  "unit": "m",
+  "version": 1
+}

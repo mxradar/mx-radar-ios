@@ -1,0 +1,2029 @@
+{
+ "BP_DFMCharacter_C": [
+  {
+   "index": 43,
+   "handle": 44,
+   "element_size": 248,
+   "name": "AuthoritativeRootMotion",
+   "prop_class": "StructProperty",
+   "struct": "RootMotionSourceGroup",
+   "netserialize": 408423172
+  },
+  {
+   "index": 59,
+   "handle": 60,
+   "element_size": 4,
+   "name": "MoveHandle",
+   "prop_class": "StructProperty",
+   "struct": "CharacterMoveHandle",
+   "netserialize": 189503680
+  },
+  {
+   "index": 153,
+   "handle": 148,
+   "element_size": 8,
+   "name": "PreWeaponPosition",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "BP_DFMPlayerState_C": [
+  {
+   "index": 77,
+   "handle": 48,
+   "element_size": 2,
+   "name": "WeaponAmmoCount",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 134,
+   "handle": 101,
+   "element_size": 24,
+   "name": "BeKilledName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 135,
+   "handle": 102,
+   "element_size": 24,
+   "name": "KillerName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 136,
+   "handle": 103,
+   "element_size": 24,
+   "name": "InstigatorName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 149,
+   "handle": 116,
+   "element_size": 32,
+   "name": "DamageTags",
+   "prop_class": "StructProperty",
+   "struct": "GameplayTagContainer",
+   "netserialize": 253782680
+  },
+  {
+   "index": 160,
+   "handle": 2,
+   "element_size": 24,
+   "name": "CountDownTitle",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 171,
+   "handle": 13,
+   "element_size": 24,
+   "name": "KeyText",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 210,
+   "handle": 130,
+   "element_size": 2,
+   "name": "RTTReplayMs",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 217,
+   "handle": 137,
+   "element_size": 8,
+   "name": "HeroId",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 218,
+   "handle": 138,
+   "element_size": 8,
+   "name": "ExpertId",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 225,
+   "handle": 142,
+   "element_size": 8,
+   "name": "RankMatchScore",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 227,
+   "handle": 144,
+   "element_size": 8,
+   "name": "DepositValue",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 228,
+   "handle": 145,
+   "element_size": 8,
+   "name": "ConsumeValue",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 243,
+   "handle": 160,
+   "element_size": 2,
+   "name": "PlayerTrialsKillNum",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 244,
+   "handle": 161,
+   "element_size": 2,
+   "name": "PlayerTrialsAssistNum",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 258,
+   "handle": 175,
+   "element_size": 8,
+   "name": "Over200msCounts",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 280,
+   "handle": 6,
+   "element_size": 8,
+   "name": "MakerInstigatorRankMatchScore",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 359,
+   "handle": 15,
+   "element_size": 2,
+   "name": "SocketDepth",
+   "prop_class": "Int16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 386,
+   "handle": 15,
+   "element_size": 80,
+   "name": "WeaponDynamicAttrs",
+   "prop_class": "StructProperty",
+   "struct": "ModularWeaponDynamicAttrbuites",
+   "netserialize": 189589824
+  },
+  {
+   "index": 389,
+   "handle": 18,
+   "element_size": 2,
+   "name": "Duability",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 390,
+   "handle": 19,
+   "element_size": 2,
+   "name": "DuabilityMax",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 395,
+   "handle": 24,
+   "element_size": 208,
+   "name": "SkinInfo",
+   "prop_class": "StructProperty",
+   "struct": "WeaponSkinInfo",
+   "netserialize": 250853516
+  },
+  {
+   "index": 405,
+   "handle": 6,
+   "element_size": 8,
+   "name": "MakerInstigatorRankMatchScore",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 484,
+   "handle": 15,
+   "element_size": 2,
+   "name": "SocketDepth",
+   "prop_class": "Int16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 511,
+   "handle": 200,
+   "element_size": 80,
+   "name": "WeaponDynamicAttrs",
+   "prop_class": "StructProperty",
+   "struct": "ModularWeaponDynamicAttrbuites",
+   "netserialize": 189589824
+  },
+  {
+   "index": 514,
+   "handle": 203,
+   "element_size": 2,
+   "name": "Duability",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 515,
+   "handle": 204,
+   "element_size": 2,
+   "name": "DuabilityMax",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 520,
+   "handle": 209,
+   "element_size": 208,
+   "name": "SkinInfo",
+   "prop_class": "StructProperty",
+   "struct": "WeaponSkinInfo",
+   "netserialize": 250853516
+  },
+  {
+   "index": 529,
+   "handle": 6,
+   "element_size": 8,
+   "name": "MakerInstigatorRankMatchScore",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 608,
+   "handle": 15,
+   "element_size": 2,
+   "name": "SocketDepth",
+   "prop_class": "Int16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 635,
+   "handle": 225,
+   "element_size": 80,
+   "name": "WeaponDynamicAttrs",
+   "prop_class": "StructProperty",
+   "struct": "ModularWeaponDynamicAttrbuites",
+   "netserialize": 189589824
+  },
+  {
+   "index": 638,
+   "handle": 228,
+   "element_size": 2,
+   "name": "Duability",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 639,
+   "handle": 229,
+   "element_size": 2,
+   "name": "DuabilityMax",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 644,
+   "handle": 234,
+   "element_size": 208,
+   "name": "SkinInfo",
+   "prop_class": "StructProperty",
+   "struct": "WeaponSkinInfo",
+   "netserialize": 250853516
+  },
+  {
+   "index": 656,
+   "handle": 240,
+   "element_size": 8,
+   "name": "RankNo",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 659,
+   "handle": 243,
+   "element_size": 2,
+   "name": "DFMPlayerAnonymousIndex",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "BP_WeaponMeleeNoModular_C": [
+  {
+   "index": 23,
+   "handle": 24,
+   "element_size": 80,
+   "name": "ModularWeaponDynamicAttrs",
+   "prop_class": "StructProperty",
+   "struct": "ModularWeaponDynamicAttrbuites",
+   "netserialize": 189589824
+  },
+  {
+   "index": 26,
+   "handle": 27,
+   "element_size": 2,
+   "name": "Duability",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 27,
+   "handle": 28,
+   "element_size": 2,
+   "name": "DuabilityMax",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 54,
+   "handle": 15,
+   "element_size": 2,
+   "name": "SocketDepth",
+   "prop_class": "Int16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 82,
+   "handle": 38,
+   "element_size": 208,
+   "name": "SkinInfo",
+   "prop_class": "StructProperty",
+   "struct": "WeaponSkinInfo",
+   "netserialize": 250853516
+  }
+ ],
+ "BP_EmptyHand_C": [
+  {
+   "index": 23,
+   "handle": 24,
+   "element_size": 80,
+   "name": "ModularWeaponDynamicAttrs",
+   "prop_class": "StructProperty",
+   "struct": "ModularWeaponDynamicAttrbuites",
+   "netserialize": 189589824
+  },
+  {
+   "index": 26,
+   "handle": 27,
+   "element_size": 2,
+   "name": "Duability",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 27,
+   "handle": 28,
+   "element_size": 2,
+   "name": "DuabilityMax",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 54,
+   "handle": 15,
+   "element_size": 2,
+   "name": "SocketDepth",
+   "prop_class": "Int16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 82,
+   "handle": 38,
+   "element_size": 208,
+   "name": "SkinInfo",
+   "prop_class": "StructProperty",
+   "struct": "WeaponSkinInfo",
+   "netserialize": 250853516
+  }
+ ],
+ "BP_WeaponMeleeNoModular_Inspect_C": [
+  {
+   "index": 23,
+   "handle": 24,
+   "element_size": 80,
+   "name": "ModularWeaponDynamicAttrs",
+   "prop_class": "StructProperty",
+   "struct": "ModularWeaponDynamicAttrbuites",
+   "netserialize": 189589824
+  },
+  {
+   "index": 26,
+   "handle": 27,
+   "element_size": 2,
+   "name": "Duability",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 27,
+   "handle": 28,
+   "element_size": 2,
+   "name": "DuabilityMax",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 54,
+   "handle": 15,
+   "element_size": 2,
+   "name": "SocketDepth",
+   "prop_class": "Int16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 82,
+   "handle": 38,
+   "element_size": 208,
+   "name": "SkinInfo",
+   "prop_class": "StructProperty",
+   "struct": "WeaponSkinInfo",
+   "netserialize": 250853516
+  }
+ ],
+ "BP_GameState_PVPVE_C": [
+  {
+   "index": 57,
+   "handle": 55,
+   "element_size": 8,
+   "name": "MatchStartTimestamp",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 161,
+   "handle": 2,
+   "element_size": 24,
+   "name": "ExposeText",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "BP_WeaponHUDUN_C": [
+  {
+   "index": 23,
+   "handle": 24,
+   "element_size": 80,
+   "name": "ModularWeaponDynamicAttrs",
+   "prop_class": "StructProperty",
+   "struct": "ModularWeaponDynamicAttrbuites",
+   "netserialize": 189589824
+  },
+  {
+   "index": 26,
+   "handle": 27,
+   "element_size": 2,
+   "name": "Duability",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 27,
+   "handle": 28,
+   "element_size": 2,
+   "name": "DuabilityMax",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 54,
+   "handle": 15,
+   "element_size": 2,
+   "name": "SocketDepth",
+   "prop_class": "Int16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 82,
+   "handle": 38,
+   "element_size": 208,
+   "name": "SkinInfo",
+   "prop_class": "StructProperty",
+   "struct": "WeaponSkinInfo",
+   "netserialize": 250853516
+  }
+ ],
+ "BP_WeaponThrowC4_C": [
+  {
+   "index": 23,
+   "handle": 24,
+   "element_size": 80,
+   "name": "ModularWeaponDynamicAttrs",
+   "prop_class": "StructProperty",
+   "struct": "ModularWeaponDynamicAttrbuites",
+   "netserialize": 189589824
+  },
+  {
+   "index": 26,
+   "handle": 27,
+   "element_size": 2,
+   "name": "Duability",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 27,
+   "handle": 28,
+   "element_size": 2,
+   "name": "DuabilityMax",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 54,
+   "handle": 15,
+   "element_size": 2,
+   "name": "SocketDepth",
+   "prop_class": "Int16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 82,
+   "handle": 38,
+   "element_size": 208,
+   "name": "SkinInfo",
+   "prop_class": "StructProperty",
+   "struct": "WeaponSkinInfo",
+   "netserialize": 250853516
+  }
+ ],
+ "DFMHudDataReplicator": [
+  {
+   "index": 17,
+   "handle": 1,
+   "element_size": 240,
+   "name": "Items",
+   "prop_class": "StructProperty",
+   "struct": "GPHudData",
+   "netserialize": 267657452
+  }
+ ],
+ "MovementReplicationActor": [
+  {
+   "index": 22,
+   "handle": 2,
+   "element_size": 120,
+   "name": "FireInfo",
+   "prop_class": "StructProperty",
+   "struct": "WeaponFireMulticastInfo_OnFire",
+   "netserialize": 189506088
+  },
+  {
+   "index": 30,
+   "handle": 20,
+   "element_size": 80,
+   "name": "LastFireIdMap",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 31,
+   "handle": 21,
+   "element_size": 736,
+   "name": "MovementInfo",
+   "prop_class": "StructProperty",
+   "struct": "RepMovementInfo",
+   "netserialize": 257833620
+  },
+  {
+   "index": 32,
+   "handle": 22,
+   "element_size": 736,
+   "name": "MovementInfoReplay",
+   "prop_class": "StructProperty",
+   "struct": "RepMovementInfo",
+   "netserialize": 257833620
+  }
+ ],
+ "LowRepPriorityGameState": [
+  {
+   "index": 51,
+   "handle": 30,
+   "element_size": 24,
+   "name": "BeKilledName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 52,
+   "handle": 31,
+   "element_size": 24,
+   "name": "KillerName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 53,
+   "handle": 32,
+   "element_size": 24,
+   "name": "InstigatorName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 66,
+   "handle": 45,
+   "element_size": 32,
+   "name": "DamageTags",
+   "prop_class": "StructProperty",
+   "struct": "GameplayTagContainer",
+   "netserialize": 253782680
+  }
+ ],
+ "BP_SOLQuestInteract_C": [
+  {
+   "index": 41,
+   "handle": 32,
+   "element_size": 24,
+   "name": "Title",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 42,
+   "handle": 33,
+   "element_size": 24,
+   "name": "Text",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 43,
+   "handle": 34,
+   "element_size": 24,
+   "name": "TextHD",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 46,
+   "handle": 37,
+   "element_size": 24,
+   "name": "ScanViewText",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 54,
+   "handle": 42,
+   "element_size": 24,
+   "name": "NoScanItemName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 55,
+   "handle": 43,
+   "element_size": 24,
+   "name": "NoScanItemDescription",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 69,
+   "handle": 49,
+   "element_size": 8,
+   "name": "objectiveId",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "DesReplicationActor": [
+  {
+   "index": 23,
+   "handle": 2,
+   "element_size": 8,
+   "name": "BrokenStateBitMask",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "BP_DFMCharacter_AI_DT_C": [
+  {
+   "index": 43,
+   "handle": 44,
+   "element_size": 248,
+   "name": "AuthoritativeRootMotion",
+   "prop_class": "StructProperty",
+   "struct": "RootMotionSourceGroup",
+   "netserialize": 408423172
+  },
+  {
+   "index": 59,
+   "handle": 60,
+   "element_size": 4,
+   "name": "MoveHandle",
+   "prop_class": "StructProperty",
+   "struct": "CharacterMoveHandle",
+   "netserialize": 189503680
+  },
+  {
+   "index": 153,
+   "handle": 148,
+   "element_size": 8,
+   "name": "PreWeaponPosition",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 194,
+   "handle": 185,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  },
+  {
+   "index": 217,
+   "handle": 189,
+   "element_size": 80,
+   "name": "SectionTargets",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 255,
+   "handle": 213,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  }
+ ],
+ "DFMContainerDataCollector": [
+  {
+   "index": 19,
+   "handle": 3,
+   "element_size": 24,
+   "name": "InteractorName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 33,
+   "handle": 5,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  }
+ ],
+ "BP_AbilityBullet_AntiTankGrenade_C": [
+  {
+   "index": 17,
+   "handle": 18,
+   "element_size": 4,
+   "name": "GPProjectileInfo",
+   "prop_class": "StructProperty",
+   "struct": "GPProjectileInfo",
+   "netserialize": 148616516
+  },
+  {
+   "index": 19,
+   "handle": 1,
+   "element_size": 40,
+   "name": "ReplicatedEvents",
+   "prop_class": "StructProperty",
+   "struct": "ProjectileEvent",
+   "netserialize": 260360256
+  },
+  {
+   "index": 38,
+   "handle": 37,
+   "element_size": 8,
+   "name": "ExplodeAttackerValueId",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 44,
+   "handle": 43,
+   "element_size": 136,
+   "name": "LimbsHitResult",
+   "prop_class": "StructProperty",
+   "struct": "HitResult",
+   "netserialize": 253753556
+  },
+  {
+   "index": 88,
+   "handle": 87,
+   "element_size": 136,
+   "name": "StickyHitResult",
+   "prop_class": "StructProperty",
+   "struct": "HitResult",
+   "netserialize": 253753556
+  }
+ ],
+ "BP_DFMCharacter_AI_DT_RPG_C": [
+  {
+   "index": 43,
+   "handle": 44,
+   "element_size": 248,
+   "name": "AuthoritativeRootMotion",
+   "prop_class": "StructProperty",
+   "struct": "RootMotionSourceGroup",
+   "netserialize": 408423172
+  },
+  {
+   "index": 59,
+   "handle": 60,
+   "element_size": 4,
+   "name": "MoveHandle",
+   "prop_class": "StructProperty",
+   "struct": "CharacterMoveHandle",
+   "netserialize": 189503680
+  },
+  {
+   "index": 153,
+   "handle": 148,
+   "element_size": 8,
+   "name": "PreWeaponPosition",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 194,
+   "handle": 185,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  },
+  {
+   "index": 217,
+   "handle": 189,
+   "element_size": 80,
+   "name": "SectionTargets",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 255,
+   "handle": 213,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  }
+ ],
+ "BP_Interact_Computer_C": [
+  {
+   "index": 41,
+   "handle": 32,
+   "element_size": 24,
+   "name": "Title",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 42,
+   "handle": 33,
+   "element_size": 24,
+   "name": "Text",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 43,
+   "handle": 34,
+   "element_size": 24,
+   "name": "TextHD",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 46,
+   "handle": 37,
+   "element_size": 24,
+   "name": "ScanViewText",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 54,
+   "handle": 42,
+   "element_size": 24,
+   "name": "NoScanItemName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 55,
+   "handle": 43,
+   "element_size": 24,
+   "name": "NoScanItemDescription",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "BP_DFMAICharacter_ShielderLight_C": [
+  {
+   "index": 43,
+   "handle": 44,
+   "element_size": 248,
+   "name": "AuthoritativeRootMotion",
+   "prop_class": "StructProperty",
+   "struct": "RootMotionSourceGroup",
+   "netserialize": 408423172
+  },
+  {
+   "index": 59,
+   "handle": 60,
+   "element_size": 4,
+   "name": "MoveHandle",
+   "prop_class": "StructProperty",
+   "struct": "CharacterMoveHandle",
+   "netserialize": 189503680
+  },
+  {
+   "index": 153,
+   "handle": 148,
+   "element_size": 8,
+   "name": "PreWeaponPosition",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 194,
+   "handle": 185,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  },
+  {
+   "index": 217,
+   "handle": 189,
+   "element_size": 80,
+   "name": "SectionTargets",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 255,
+   "handle": 213,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  }
+ ],
+ "BP_Interact_Computer_OpenDoor_C": [
+  {
+   "index": 41,
+   "handle": 32,
+   "element_size": 24,
+   "name": "Title",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 42,
+   "handle": 33,
+   "element_size": 24,
+   "name": "Text",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 43,
+   "handle": 34,
+   "element_size": 24,
+   "name": "TextHD",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 46,
+   "handle": 37,
+   "element_size": 24,
+   "name": "ScanViewText",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 54,
+   "handle": 42,
+   "element_size": 24,
+   "name": "NoScanItemName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 55,
+   "handle": 43,
+   "element_size": 24,
+   "name": "NoScanItemDescription",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "BP_AbilityBullet_C101_Smoke_C": [
+  {
+   "index": 17,
+   "handle": 18,
+   "element_size": 4,
+   "name": "GPProjectileInfo",
+   "prop_class": "StructProperty",
+   "struct": "GPProjectileInfo",
+   "netserialize": 148616516
+  },
+  {
+   "index": 19,
+   "handle": 1,
+   "element_size": 40,
+   "name": "ReplicatedEvents",
+   "prop_class": "StructProperty",
+   "struct": "ProjectileEvent",
+   "netserialize": 260360256
+  },
+  {
+   "index": 38,
+   "handle": 37,
+   "element_size": 8,
+   "name": "ExplodeAttackerValueId",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 44,
+   "handle": 43,
+   "element_size": 136,
+   "name": "LimbsHitResult",
+   "prop_class": "StructProperty",
+   "struct": "HitResult",
+   "netserialize": 253753556
+  },
+  {
+   "index": 88,
+   "handle": 87,
+   "element_size": 136,
+   "name": "StickyHitResult",
+   "prop_class": "StructProperty",
+   "struct": "HitResult",
+   "netserialize": 253753556
+  }
+ ],
+ "ProjectileReplicateComponent": [
+  {
+   "index": 22,
+   "handle": 20,
+   "element_size": 8,
+   "name": "ExplodeAttackerValueId",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 28,
+   "handle": 26,
+   "element_size": 136,
+   "name": "LimbsHitResult",
+   "prop_class": "StructProperty",
+   "struct": "HitResult",
+   "netserialize": 253753556
+  },
+  {
+   "index": 36,
+   "handle": 6,
+   "element_size": 8,
+   "name": "ProjectileMaxDamageDistance",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 60,
+   "handle": 11,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  }
+ ],
+ "DFMPlayerActivityComponent": [
+  {
+   "index": 9,
+   "handle": 1,
+   "element_size": 8,
+   "name": "QuestPropItemIDArray",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 12,
+   "handle": 1,
+   "element_size": 8,
+   "name": "ValidActivityGoalArray",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 22,
+   "handle": 5,
+   "element_size": 8,
+   "name": "current_value",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "DFMControllerAudioComponent": [
+  {
+   "index": 16,
+   "handle": 5,
+   "element_size": 2,
+   "name": "KeepTime",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "SOLPlayerQuestComponent": [
+  {
+   "index": 17,
+   "handle": 1,
+   "element_size": 8,
+   "name": "QuestID",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 21,
+   "handle": 5,
+   "element_size": 8,
+   "name": "QuestAcceptTime",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 23,
+   "handle": 1,
+   "element_size": 8,
+   "name": "QuestID",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 24,
+   "handle": 2,
+   "element_size": 8,
+   "name": "QuestObjectionId",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 40,
+   "handle": 18,
+   "element_size": 24,
+   "name": "HelperTips",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 43,
+   "handle": 21,
+   "element_size": 8,
+   "name": "Choice",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 51,
+   "handle": 11,
+   "element_size": 24,
+   "name": "QuestDesc",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 61,
+   "handle": 1,
+   "element_size": 8,
+   "name": "QuestPropItemIDArray",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "DFMMarkerControllerComponent": [
+  {
+   "index": 10,
+   "handle": 8,
+   "element_size": 24,
+   "name": "EnemyMarkerName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 29,
+   "handle": 4,
+   "element_size": 2,
+   "name": "Index",
+   "prop_class": "Int16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 32,
+   "handle": 7,
+   "element_size": 2,
+   "name": "ParentIndex",
+   "prop_class": "Int16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 35,
+   "handle": 10,
+   "element_size": 2,
+   "name": "Child",
+   "prop_class": "Int16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 48,
+   "handle": 11,
+   "element_size": 80,
+   "name": "DynamicAttributes",
+   "prop_class": "StructProperty",
+   "struct": "ModularWeaponDynamicAttrbuites",
+   "netserialize": 189589824
+  },
+  {
+   "index": 53,
+   "handle": 16,
+   "element_size": 208,
+   "name": "SkinInfo",
+   "prop_class": "StructProperty",
+   "struct": "WeaponSkinInfo",
+   "netserialize": 250853516
+  }
+ ],
+ "InventoryManager": [
+  {
+   "index": 7,
+   "handle": 6,
+   "element_size": 88,
+   "name": "RepData",
+   "prop_class": "StructProperty",
+   "struct": "InvMgrRepData",
+   "netserialize": 260315656
+  },
+  {
+   "index": 9,
+   "handle": 1,
+   "element_size": 2008,
+   "name": "Items",
+   "prop_class": "StructProperty",
+   "struct": "InventoryItemInfo",
+   "netserialize": 273168428
+  }
+ ],
+ "DFMSkillComponent": [
+  {
+   "index": 159,
+   "handle": 1,
+   "element_size": 1,
+   "name": "LogicID",
+   "prop_class": "Int8Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 194,
+   "handle": 1,
+   "element_size": 1,
+   "name": "LogicID",
+   "prop_class": "Int8Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 207,
+   "handle": 145,
+   "element_size": 8,
+   "name": "GMExpertID",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 227,
+   "handle": 147,
+   "element_size": 8,
+   "name": "BattleFieldPropItemID",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 228,
+   "handle": 148,
+   "element_size": 8,
+   "name": "BattleFieldPropItemSkinID",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "DFMComBoardComponent": [
+  {
+   "index": 75,
+   "handle": 72,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  },
+  {
+   "index": 78,
+   "handle": 75,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  }
+ ],
+ "DFMSlotChargingComponent": [
+  {
+   "index": 26,
+   "handle": 13,
+   "element_size": 80,
+   "name": "PerkScaleMap",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "DFMCharacterBattleClassComponent": [
+  {
+   "index": 3,
+   "handle": 4,
+   "element_size": 8,
+   "name": "ExpertId",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "SOLInteractorComponent": [
+  {
+   "index": 30,
+   "handle": 17,
+   "element_size": 24,
+   "name": "Title",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 31,
+   "handle": 18,
+   "element_size": 24,
+   "name": "Text",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 32,
+   "handle": 19,
+   "element_size": 24,
+   "name": "TextHD",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 35,
+   "handle": 22,
+   "element_size": 24,
+   "name": "ScanViewText",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 43,
+   "handle": 27,
+   "element_size": 24,
+   "name": "NoScanItemName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 44,
+   "handle": 28,
+   "element_size": 24,
+   "name": "NoScanItemDescription",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 81,
+   "handle": 60,
+   "element_size": 8,
+   "name": "NextOperatorTag",
+   "prop_class": "StructProperty",
+   "struct": "GameplayTag",
+   "netserialize": 253783268
+  }
+ ],
+ "WeaponReplicateComponent": [
+  {
+   "index": 28,
+   "handle": 4,
+   "element_size": 56,
+   "name": "WeaponBPClassPath",
+   "prop_class": "StructProperty",
+   "struct": "GPFastWeaponBPClassPath",
+   "netserialize": 256124444
+  },
+  {
+   "index": 36,
+   "handle": 4,
+   "element_size": 56,
+   "name": "WeaponBPClassPath",
+   "prop_class": "StructProperty",
+   "struct": "GPFastWeaponBPClassPath",
+   "netserialize": 256124444
+  },
+  {
+   "index": 48,
+   "handle": 1,
+   "element_size": 184,
+   "name": "RepHitInfoList",
+   "prop_class": "StructProperty",
+   "struct": "GPWeaponHitImpactRepInfo",
+   "netserialize": 253738280
+  },
+  {
+   "index": 51,
+   "handle": 1,
+   "element_size": 320,
+   "name": "Items",
+   "prop_class": "StructProperty",
+   "struct": "WeaponReplicateExtraData",
+   "netserialize": 250209124
+  },
+  {
+   "index": 57,
+   "handle": 1,
+   "element_size": 40,
+   "name": "DynamicAttributes",
+   "prop_class": "StructProperty",
+   "struct": "ModularWeaponDynamicAttributesBase",
+   "netserialize": 189590180
+  }
+ ],
+ "DFCommercializationComponent": [
+  {
+   "index": 7,
+   "handle": 3,
+   "element_size": 8,
+   "name": "Slot",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "SOLCharacterEquipComponent": [
+  {
+   "index": 39,
+   "handle": 3,
+   "element_size": 8,
+   "name": "DamageRelativeLocation",
+   "prop_class": "StructProperty",
+   "struct": "Vector2D",
+   "netserialize": 253721832
+  }
+ ],
+ "GPFSMStateMachineComponent": [
+  {
+   "index": 15,
+   "handle": 13,
+   "element_size": 8,
+   "name": "Timestamp",
+   "prop_class": "StructProperty",
+   "struct": "DateTime",
+   "netserialize": 380250868
+  }
+ ],
+ "MapInfoComponent": [
+  {
+   "index": 49,
+   "handle": 30,
+   "element_size": 24,
+   "name": "BeKilledName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 50,
+   "handle": 31,
+   "element_size": 24,
+   "name": "KillerName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 51,
+   "handle": 32,
+   "element_size": 24,
+   "name": "InstigatorName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 64,
+   "handle": 45,
+   "element_size": 32,
+   "name": "DamageTags",
+   "prop_class": "StructProperty",
+   "struct": "GameplayTagContainer",
+   "netserialize": 253782680
+  },
+  {
+   "index": 75,
+   "handle": 1,
+   "element_size": 8,
+   "name": "objectiveId",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 80,
+   "handle": 6,
+   "element_size": 8,
+   "name": "TrackingRangeOffset",
+   "prop_class": "StructProperty",
+   "struct": "Vector2D",
+   "netserialize": 253721832
+  },
+  {
+   "index": 88,
+   "handle": 18,
+   "element_size": 8,
+   "name": "CurrentTrackedQuestObjectiveID",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "SOLMapInfoSystem": [
+  {
+   "index": 7,
+   "handle": 4,
+   "element_size": 80,
+   "name": "BreakthroughAmmoBoxNameSet",
+   "prop_class": "SetProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 15,
+   "handle": 1,
+   "element_size": 8,
+   "name": "PlayerUin",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 19,
+   "handle": 1,
+   "element_size": 8,
+   "name": "SkillPosArray",
+   "prop_class": "StructProperty",
+   "struct": "Vector2D",
+   "netserialize": 253721832
+  },
+  {
+   "index": 47,
+   "handle": 5,
+   "element_size": 24,
+   "name": "HighValueBoxName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 48,
+   "handle": 6,
+   "element_size": 24,
+   "name": "Desc",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 99,
+   "handle": 5,
+   "element_size": 24,
+   "name": "HighValueBoxName",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 100,
+   "handle": 6,
+   "element_size": 24,
+   "name": "Desc",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "InteractSystem": [
+  {
+   "index": 3,
+   "handle": 1,
+   "element_size": 24,
+   "name": null,
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "SOLTimeLineComponnet": [
+  {
+   "index": 22,
+   "handle": 4,
+   "element_size": 24,
+   "name": "EventDescription",
+   "prop_class": "TextProperty",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "DFMAbilityGameStateComponent": [
+  {
+   "index": 33,
+   "handle": 6,
+   "element_size": 80,
+   "name": "NodeCantPlayMap",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 37,
+   "handle": 8,
+   "element_size": 80,
+   "name": "LogicFlags",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 38,
+   "handle": 9,
+   "element_size": 80,
+   "name": "LogicExcuteType",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 39,
+   "handle": 10,
+   "element_size": 80,
+   "name": "SkillBehaviorMap",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 40,
+   "handle": 11,
+   "element_size": 80,
+   "name": "SkillBehaviorMapBase",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 41,
+   "handle": 12,
+   "element_size": 80,
+   "name": "BehaviorGroupMap",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 42,
+   "handle": 13,
+   "element_size": 80,
+   "name": "BehaviorGroupMapBase",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 43,
+   "handle": 14,
+   "element_size": 80,
+   "name": "FSMStatusMapBase",
+   "prop_class": "MapProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 45,
+   "handle": 7,
+   "element_size": 8,
+   "name": "AbilityIndexRam",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 46,
+   "handle": 8,
+   "element_size": 8,
+   "name": "AbilityIndexRam2",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "DFMContractManagerComponent": [
+  {
+   "index": 18,
+   "handle": 1,
+   "element_size": 8,
+   "name": "ContractProps",
+   "prop_class": "Int64Property",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "PropertyReplicationComponent": [
+  {
+   "index": 2,
+   "handle": 3,
+   "element_size": 224,
+   "name": "Container",
+   "prop_class": "StructProperty",
+   "struct": "PropertyReplicationContainer",
+   "netserialize": 247479676
+  },
+  {
+   "index": 3,
+   "handle": 4,
+   "element_size": 224,
+   "name": "ContainerReplay",
+   "prop_class": "StructProperty",
+   "struct": "PropertyReplicationContainer",
+   "netserialize": 247479676
+  }
+ ],
+ "SOLVoiceOverComponent": [
+  {
+   "index": 4,
+   "handle": 5,
+   "element_size": 80,
+   "name": "VOSubtitleSeqFinishedSet",
+   "prop_class": "SetProperty",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 5,
+   "handle": 6,
+   "element_size": 80,
+   "name": "VOSubtitleGroupCloseToFinishedSet",
+   "prop_class": "SetProperty",
+   "struct": null,
+   "netserialize": null
+  }
+ ],
+ "GPWeaponProjectileMovementComponent": [
+  {
+   "index": 2,
+   "handle": 3,
+   "element_size": 136,
+   "name": "StopHitResult",
+   "prop_class": "StructProperty",
+   "struct": "HitResult",
+   "netserialize": 253753556
+  },
+  {
+   "index": 4,
+   "handle": 1,
+   "element_size": 48,
+   "name": "Data",
+   "prop_class": "StructProperty",
+   "struct": "ProjectileTrajectoryItem",
+   "netserialize": 253776012
+  }
+ ],
+ "GPVaultAndClimbComponent": [
+  {
+   "index": 2,
+   "handle": 3,
+   "element_size": 2,
+   "name": "ServerConfirmedVaultSeq",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 14,
+   "handle": 15,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  },
+  {
+   "index": 17,
+   "handle": 18,
+   "element_size": 2,
+   "name": "ClimbLadderEndMoveNum",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 18,
+   "handle": 19,
+   "element_size": 2,
+   "name": "ClimbLadderStartMoveNum",
+   "prop_class": "UInt16Property",
+   "struct": null,
+   "netserialize": null
+  },
+  {
+   "index": 19,
+   "handle": 20,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  },
+  {
+   "index": 22,
+   "handle": 23,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  },
+  {
+   "index": 25,
+   "handle": 26,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  },
+  {
+   "index": 30,
+   "handle": 31,
+   "element_size": 6,
+   "name": "RepClimbLadderMoveInfo",
+   "prop_class": "StructProperty",
+   "struct": "RepGPClimbLadderMoveInfo",
+   "netserialize": 263338936
+  },
+  {
+   "index": 32,
+   "handle": 33,
+   "element_size": 16,
+   "name": "Rotation",
+   "prop_class": "StructProperty",
+   "struct": "Quat",
+   "netserialize": 253742156
+  }
+ ]
+}

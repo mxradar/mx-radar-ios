@@ -1,0 +1,901 @@
+{
+ "profile": "0904",
+ "source": "runtime class cache and controller RepLayout, PID11419, 2026-09-08",
+ "field_count": 244,
+ "methods": {
+  "193": "diff",
+  "194": "diff_space",
+  "198": "full"
+ },
+ "controller_catalog": {
+  "class": "BP_DFMPlayerController_C",
+  "parents": [
+   {
+    "index": 0,
+    "name": "bHidden",
+    "cmd_start": 0,
+    "cmd_end": 1
+   },
+   {
+    "index": 1,
+    "name": "bNetActive",
+    "cmd_start": 1,
+    "cmd_end": 2
+   },
+   {
+    "index": 2,
+    "name": "bReplicateMovement",
+    "cmd_start": 2,
+    "cmd_end": 3
+   },
+   {
+    "index": 3,
+    "name": "bTearOff",
+    "cmd_start": 3,
+    "cmd_end": 4
+   },
+   {
+    "index": 4,
+    "name": "bCanBeDamaged",
+    "cmd_start": 4,
+    "cmd_end": 5
+   },
+   {
+    "index": 5,
+    "name": "RemoteRole",
+    "cmd_start": 5,
+    "cmd_end": 6
+   },
+   {
+    "index": 6,
+    "name": "ReplicatedMovement",
+    "cmd_start": 6,
+    "cmd_end": 7
+   },
+   {
+    "index": 7,
+    "name": "AttachmentReplication",
+    "cmd_start": 7,
+    "cmd_end": 13
+   },
+   {
+    "index": 8,
+    "name": "Owner",
+    "cmd_start": 13,
+    "cmd_end": 14
+   },
+   {
+    "index": 9,
+    "name": "Role",
+    "cmd_start": 14,
+    "cmd_end": 15
+   },
+   {
+    "index": 10,
+    "name": "Instigator",
+    "cmd_start": 15,
+    "cmd_end": 16
+   },
+   {
+    "index": 11,
+    "name": "PlayerState",
+    "cmd_start": 16,
+    "cmd_end": 17
+   },
+   {
+    "index": 12,
+    "name": "Pawn",
+    "cmd_start": 17,
+    "cmd_end": 18
+   },
+   {
+    "index": 13,
+    "name": "TargetViewRotation",
+    "cmd_start": 18,
+    "cmd_end": 19
+   },
+   {
+    "index": 14,
+    "name": "SpawnLocation",
+    "cmd_start": 19,
+    "cmd_end": 20
+   },
+   {
+    "index": 15,
+    "name": "bIsLiveSpectating",
+    "cmd_start": 20,
+    "cmd_end": 21
+   },
+   {
+    "index": 16,
+    "name": "bIsSpectatingAI",
+    "cmd_start": 21,
+    "cmd_end": 22
+   },
+   {
+    "index": 17,
+    "name": "bBeingSpectatingCount",
+    "cmd_start": 22,
+    "cmd_end": 23
+   },
+   {
+    "index": 18,
+    "name": "bIsLiveSpectatingForReset",
+    "cmd_start": 23,
+    "cmd_end": 24
+   },
+   {
+    "index": 19,
+    "name": "CurrentLocalFocusFromServer",
+    "cmd_start": 24,
+    "cmd_end": 25
+   },
+   {
+    "index": 20,
+    "name": "CurrentLocalFocusPlayerPawn",
+    "cmd_start": 25,
+    "cmd_end": 26
+   },
+   {
+    "index": 21,
+    "name": "CurrentSpectatingLocalFocusFromServer",
+    "cmd_start": 26,
+    "cmd_end": 27
+   },
+   {
+    "index": 22,
+    "name": "bIsInObserverMode",
+    "cmd_start": 27,
+    "cmd_end": 28
+   },
+   {
+    "index": 23,
+    "name": "ReLoginCount",
+    "cmd_start": 28,
+    "cmd_end": 29
+   },
+   {
+    "index": 24,
+    "name": "ReplicatedGamePlayMode",
+    "cmd_start": 29,
+    "cmd_end": 30
+   },
+   {
+    "index": 25,
+    "name": "bServerEnableProcessPlayerInput",
+    "cmd_start": 30,
+    "cmd_end": 31
+   },
+   {
+    "index": 26,
+    "name": "GPObserverPawn",
+    "cmd_start": 31,
+    "cmd_end": 32
+   },
+   {
+    "index": 27,
+    "name": "InGameConsoleCrossplayType",
+    "cmd_start": 32,
+    "cmd_end": 33
+   },
+   {
+    "index": 28,
+    "name": "PlayerStartSpot",
+    "cmd_start": 33,
+    "cmd_end": 34
+   },
+   {
+    "index": 29,
+    "name": "PlayerSettlementComponent",
+    "cmd_start": 34,
+    "cmd_end": 35
+   },
+   {
+    "index": 30,
+    "name": "PlayerGMComponent",
+    "cmd_start": 35,
+    "cmd_end": 36
+   },
+   {
+    "index": 31,
+    "name": "GMWeaponComponent",
+    "cmd_start": 36,
+    "cmd_end": 37
+   },
+   {
+    "index": 32,
+    "name": "RuleInvalidCharacterComponentArray",
+    "cmd_start": 37,
+    "cmd_end": 40
+   },
+   {
+    "index": 33,
+    "name": "OnPossessTickNum",
+    "cmd_start": 40,
+    "cmd_end": 41
+   },
+   {
+    "index": 34,
+    "name": "SOLPlayerQuestComponent",
+    "cmd_start": 41,
+    "cmd_end": 42
+   },
+   {
+    "index": 35,
+    "name": "HudDataReplicator",
+    "cmd_start": 42,
+    "cmd_end": 43
+   },
+   {
+    "index": 36,
+    "name": "PickupDeadBodyUinArr",
+    "cmd_start": 43,
+    "cmd_end": 46
+   },
+   {
+    "index": 37,
+    "name": "OBInventoryManager",
+    "cmd_start": 46,
+    "cmd_end": 47
+   }
+  ],
+  "cmds": [
+   {
+    "index": 0,
+    "type": 3,
+    "end_cmd": 0,
+    "handle": 1,
+    "parent_index": 0,
+    "object_offset": 144
+   },
+   {
+    "index": 1,
+    "type": 3,
+    "end_cmd": 0,
+    "handle": 2,
+    "parent_index": 1,
+    "object_offset": 144
+   },
+   {
+    "index": 2,
+    "type": 3,
+    "end_cmd": 0,
+    "handle": 3,
+    "parent_index": 2,
+    "object_offset": 144
+   },
+   {
+    "index": 3,
+    "type": 3,
+    "end_cmd": 0,
+    "handle": 4,
+    "parent_index": 3,
+    "object_offset": 145
+   },
+   {
+    "index": 4,
+    "type": 3,
+    "end_cmd": 0,
+    "handle": 5,
+    "parent_index": 4,
+    "object_offset": 146
+   },
+   {
+    "index": 5,
+    "type": 6,
+    "end_cmd": 0,
+    "handle": 6,
+    "parent_index": 5,
+    "object_offset": 152
+   },
+   {
+    "index": 6,
+    "type": 15,
+    "end_cmd": 0,
+    "handle": 7,
+    "parent_index": 6,
+    "object_offset": 156
+   },
+   {
+    "index": 7,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 8,
+    "parent_index": 7,
+    "object_offset": 224
+   },
+   {
+    "index": 8,
+    "type": 13,
+    "end_cmd": 0,
+    "handle": 9,
+    "parent_index": 7,
+    "object_offset": 232
+   },
+   {
+    "index": 9,
+    "type": 13,
+    "end_cmd": 0,
+    "handle": 10,
+    "parent_index": 7,
+    "object_offset": 244
+   },
+   {
+    "index": 10,
+    "type": 11,
+    "end_cmd": 0,
+    "handle": 11,
+    "parent_index": 7,
+    "object_offset": 256
+   },
+   {
+    "index": 11,
+    "type": 7,
+    "end_cmd": 0,
+    "handle": 12,
+    "parent_index": 7,
+    "object_offset": 268
+   },
+   {
+    "index": 12,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 13,
+    "parent_index": 7,
+    "object_offset": 280
+   },
+   {
+    "index": 13,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 14,
+    "parent_index": 8,
+    "object_offset": 288
+   },
+   {
+    "index": 14,
+    "type": 6,
+    "end_cmd": 0,
+    "handle": 15,
+    "parent_index": 9,
+    "object_offset": 304
+   },
+   {
+    "index": 15,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 16,
+    "parent_index": 10,
+    "object_offset": 360
+   },
+   {
+    "index": 16,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 17,
+    "parent_index": 11,
+    "object_offset": 888
+   },
+   {
+    "index": 17,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 18,
+    "parent_index": 12,
+    "object_offset": 928
+   },
+   {
+    "index": 18,
+    "type": 11,
+    "end_cmd": 0,
+    "handle": 19,
+    "parent_index": 13,
+    "object_offset": 1052
+   },
+   {
+    "index": 19,
+    "type": 10,
+    "end_cmd": 0,
+    "handle": 20,
+    "parent_index": 14,
+    "object_offset": 1704
+   },
+   {
+    "index": 20,
+    "type": 21,
+    "end_cmd": 0,
+    "handle": 21,
+    "parent_index": 15,
+    "object_offset": 1779
+   },
+   {
+    "index": 21,
+    "type": 21,
+    "end_cmd": 0,
+    "handle": 22,
+    "parent_index": 16,
+    "object_offset": 1780
+   },
+   {
+    "index": 22,
+    "type": 5,
+    "end_cmd": 0,
+    "handle": 23,
+    "parent_index": 17,
+    "object_offset": 1784
+   },
+   {
+    "index": 23,
+    "type": 21,
+    "end_cmd": 0,
+    "handle": 24,
+    "parent_index": 18,
+    "object_offset": 1788
+   },
+   {
+    "index": 24,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 25,
+    "parent_index": 19,
+    "object_offset": 1912
+   },
+   {
+    "index": 25,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 26,
+    "parent_index": 20,
+    "object_offset": 1920
+   },
+   {
+    "index": 26,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 27,
+    "parent_index": 21,
+    "object_offset": 1928
+   },
+   {
+    "index": 27,
+    "type": 21,
+    "end_cmd": 0,
+    "handle": 28,
+    "parent_index": 22,
+    "object_offset": 2368
+   },
+   {
+    "index": 28,
+    "type": 5,
+    "end_cmd": 0,
+    "handle": 29,
+    "parent_index": 23,
+    "object_offset": 2384
+   },
+   {
+    "index": 29,
+    "type": 6,
+    "end_cmd": 0,
+    "handle": 30,
+    "parent_index": 24,
+    "object_offset": 2388
+   },
+   {
+    "index": 30,
+    "type": 21,
+    "end_cmd": 0,
+    "handle": 31,
+    "parent_index": 25,
+    "object_offset": 2456
+   },
+   {
+    "index": 31,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 32,
+    "parent_index": 26,
+    "object_offset": 2696
+   },
+   {
+    "index": 32,
+    "type": 5,
+    "end_cmd": 0,
+    "handle": 33,
+    "parent_index": 27,
+    "object_offset": 2732
+   },
+   {
+    "index": 33,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 34,
+    "parent_index": 28,
+    "object_offset": 2856
+   },
+   {
+    "index": 34,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 35,
+    "parent_index": 29,
+    "object_offset": 2864
+   },
+   {
+    "index": 35,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 36,
+    "parent_index": 30,
+    "object_offset": 2888
+   },
+   {
+    "index": 36,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 37,
+    "parent_index": 31,
+    "object_offset": 2896
+   },
+   {
+    "index": 37,
+    "type": 0,
+    "end_cmd": 40,
+    "handle": 38,
+    "parent_index": 32,
+    "object_offset": 3120
+   },
+   {
+    "index": 38,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 1,
+    "parent_index": 32,
+    "object_offset": 0
+   },
+   {
+    "index": 39,
+    "type": 1,
+    "end_cmd": 0,
+    "handle": 0,
+    "parent_index": 0,
+    "object_offset": 0
+   },
+   {
+    "index": 40,
+    "type": 5,
+    "end_cmd": 0,
+    "handle": 39,
+    "parent_index": 33,
+    "object_offset": 3160
+   },
+   {
+    "index": 41,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 40,
+    "parent_index": 34,
+    "object_offset": 3168
+   },
+   {
+    "index": 42,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 41,
+    "parent_index": 35,
+    "object_offset": 3176
+   },
+   {
+    "index": 43,
+    "type": 0,
+    "end_cmd": 46,
+    "handle": 42,
+    "parent_index": 36,
+    "object_offset": 3200
+   },
+   {
+    "index": 44,
+    "type": 20,
+    "end_cmd": 0,
+    "handle": 1,
+    "parent_index": 36,
+    "object_offset": 0
+   },
+   {
+    "index": 45,
+    "type": 1,
+    "end_cmd": 0,
+    "handle": 0,
+    "parent_index": 0,
+    "object_offset": 0
+   },
+   {
+    "index": 46,
+    "type": 8,
+    "end_cmd": 0,
+    "handle": 43,
+    "parent_index": 37,
+    "object_offset": 3464
+   },
+   {
+    "index": 47,
+    "type": 1,
+    "end_cmd": 0,
+    "handle": 0,
+    "parent_index": 0,
+    "object_offset": 0
+   }
+  ]
+ },
+ "controller_meta": [
+  {
+   "index": 0,
+   "name": "bHidden",
+   "prop_class": "BoolProperty"
+  },
+  {
+   "index": 1,
+   "name": "bNetActive",
+   "prop_class": "BoolProperty"
+  },
+  {
+   "index": 2,
+   "name": "bReplicateMovement",
+   "prop_class": "BoolProperty"
+  },
+  {
+   "index": 3,
+   "name": "bTearOff",
+   "prop_class": "BoolProperty"
+  },
+  {
+   "index": 4,
+   "name": "bCanBeDamaged",
+   "prop_class": "BoolProperty"
+  },
+  {
+   "index": 5,
+   "name": "RemoteRole",
+   "prop_class": "ByteProperty",
+   "enum": "ENetRole",
+   "enum_values": {
+    "ROLE_None": 0,
+    "ROLE_SimulatedProxy": 1,
+    "ROLE_AutonomousProxy": 2,
+    "ROLE_Authority": 3,
+    "ROLE_MAX": 4
+   },
+   "enum_max": 4
+  },
+  {
+   "index": 6,
+   "name": "ReplicatedMovement",
+   "prop_class": "StructProperty",
+   "struct": "RepMovement",
+   "netserialize": "0x10db4118"
+  },
+  {
+   "index": 7,
+   "name": "AttachParent",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 8,
+   "name": "LocationOffset",
+   "prop_class": "StructProperty",
+   "struct": "Vector_NetQuantize100",
+   "netserialize": "0x10dba370"
+  },
+  {
+   "index": 9,
+   "name": "RelativeScale3D",
+   "prop_class": "StructProperty",
+   "struct": "Vector_NetQuantize100",
+   "netserialize": "0x10dba370"
+  },
+  {
+   "index": 10,
+   "name": "RotationOffset",
+   "prop_class": "StructProperty",
+   "struct": "Rotator",
+   "netserialize": "0x10db776c"
+  },
+  {
+   "index": 11,
+   "name": "AttachSocket",
+   "prop_class": "NameProperty"
+  },
+  {
+   "index": 12,
+   "name": "AttachComponent",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 13,
+   "name": "Owner",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 14,
+   "name": "Role",
+   "prop_class": "ByteProperty",
+   "enum": "ENetRole",
+   "enum_values": {
+    "ROLE_None": 0,
+    "ROLE_SimulatedProxy": 1,
+    "ROLE_AutonomousProxy": 2,
+    "ROLE_Authority": 3,
+    "ROLE_MAX": 4
+   },
+   "enum_max": 4
+  },
+  {
+   "index": 15,
+   "name": "Instigator",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 16,
+   "name": "PlayerState",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 17,
+   "name": "Pawn",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 18,
+   "name": "TargetViewRotation",
+   "prop_class": "StructProperty",
+   "struct": "Rotator",
+   "netserialize": "0x10db776c"
+  },
+  {
+   "index": 19,
+   "name": "SpawnLocation",
+   "prop_class": "StructProperty",
+   "struct": "Vector",
+   "netserialize": "0x10db7b8c"
+  },
+  {
+   "index": 20,
+   "name": "bIsLiveSpectating",
+   "prop_class": "BoolProperty"
+  },
+  {
+   "index": 21,
+   "name": "bIsSpectatingAI",
+   "prop_class": "BoolProperty"
+  },
+  {
+   "index": 22,
+   "name": "bBeingSpectatingCount",
+   "prop_class": "IntProperty"
+  },
+  {
+   "index": 23,
+   "name": "bIsLiveSpectatingForReset",
+   "prop_class": "BoolProperty"
+  },
+  {
+   "index": 24,
+   "name": "CurrentLocalFocusFromServer",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 25,
+   "name": "CurrentLocalFocusPlayerPawn",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 26,
+   "name": "CurrentSpectatingLocalFocusFromServer",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 27,
+   "name": "bIsInObserverMode",
+   "prop_class": "BoolProperty"
+  },
+  {
+   "index": 28,
+   "name": "ReLoginCount",
+   "prop_class": "IntProperty"
+  },
+  {
+   "index": 29,
+   "name": "ReplicatedGamePlayMode",
+   "prop_class": "EnumProperty",
+   "enum": "EDFMGamePlayMode",
+   "enum_values": {
+    "EDFMGamePlayMode::None": 0,
+    "EDFMGamePlayMode::GamePlayMode_SOL": 1,
+    "EDFMGamePlayMode::GamePlayMode_Raid": 2,
+    "EDFMGamePlayMode::GamePlayMode_IrisDiscovery": 3,
+    "EDFMGamePlayMode::GamePlayMode_Conquest": 4,
+    "EDFMGamePlayMode::GamePlayMode_Breakthrough": 5,
+    "EDFMGamePlayMode::GamePlayMode_SafeHouse": 6,
+    "EDFMGamePlayMode::GamePlayMode_Intro": 7,
+    "EDFMGamePlayMode::GamePlayMode_BombDefusal": 8,
+    "EDFMGamePlayMode::GamePlayMode_GoldenGunGun": 9,
+    "EDFMGamePlayMode::EDFMGamePlayMode_MAX": 10
+   },
+   "enum_max": 10
+  },
+  {
+   "index": 30,
+   "name": "bServerEnableProcessPlayerInput",
+   "prop_class": "BoolProperty"
+  },
+  {
+   "index": 31,
+   "name": "GPObserverPawn",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 32,
+   "name": "InGameConsoleCrossplayType",
+   "prop_class": "IntProperty"
+  },
+  {
+   "index": 33,
+   "name": "PlayerStartSpot",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 34,
+   "name": "PlayerSettlementComponent",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 35,
+   "name": "PlayerGMComponent",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 36,
+   "name": "GMWeaponComponent",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 37,
+   "name": "RuleInvalidCharacterComponentArray",
+   "prop_class": "ArrayProperty"
+  },
+  {
+   "index": 38,
+   "name": "RuleInvalidCharacterComponentArray",
+   "prop_class": "ClassProperty"
+  },
+  {
+   "index": 40,
+   "name": "OnPossessTickNum",
+   "prop_class": "IntProperty"
+  },
+  {
+   "index": 41,
+   "name": "SOLPlayerQuestComponent",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 42,
+   "name": "HudDataReplicator",
+   "prop_class": "ObjectProperty"
+  },
+  {
+   "index": 43,
+   "name": "PickupDeadBodyUinArr",
+   "prop_class": "ArrayProperty"
+  },
+  {
+   "index": 44,
+   "name": "PickupDeadBodyUinArr",
+   "prop_class": "UInt64Property"
+  },
+  {
+   "index": 46,
+   "name": "OBInventoryManager",
+   "prop_class": "ObjectProperty"
+  }
+ ]
+}
