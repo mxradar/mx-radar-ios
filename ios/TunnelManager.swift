@@ -6,7 +6,7 @@ final class TunnelManager {
     static let shared = TunnelManager()
 
     /// 扩展的 bundle id（Xcode 里 Network Extension target 的 bundle id）
-    private let providerBundleId = "com.mx.radar.PacketTunnel"
+    private let providerBundleId = "com.mx.radar.app.PacketTunnel"
 
     func start(account: String, feedToken: String,
                completion: @escaping (Error?) -> Void) {
