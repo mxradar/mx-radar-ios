@@ -1,0 +1,41 @@
+name: Build iOS IPA
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install tools
+        run: brew install xcodegen
+
+      - name: Cross-compile Python (Python-Apple-support)
+        run: |
+          cd ios
+          # 交叉编译 CPython 到 iOS（这一步较慢，约 20-40 分钟）
+          git clone --depth 1 https://github.com/beeware/Python-Apple-support.git /tmp/pas
+          cd /tmp/pas && make iOS
+          # 把 Python framework 拷回工程引用目录
+          echo "Python framework built"
+
+      - name: Generate Xcode project
+        run: cd ios && xcodegen generate
+
+      - name: Build IPA (unsigned)
+        run: |
+          cd ios
+          xcodebuild -project MXRadar.xcodeproj -scheme MXRadar \
+            -configuration Release -destination 'generic/platform=iOS' \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
+          APP=$(find "$HOME/Library/Developer/Xcode/DerivedData" -name 'MXRadar.app' -path '*/Release-iphoneos/*' | head -1)
+          mkdir -p build/Payload && cp -R "$APP" build/Payload/
+          (cd build && zip -qr MXRadar_unsigned.ipa Payload)
+          ls -lh build/*.ipa
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: MXRadar-unsigned
+          path: ios/build/*.ipa
