@@ -101,11 +101,11 @@ final class PacketTunnelProvider: NEPacketTunnelProvider {
     private func makeSession(local: String, remote: String, key: String) -> NWUDPSession? {
         let host = remote.components(separatedBy: ":").dropLast().joined(separator: ":")
         let portStr = remote.components(separatedBy: ":").last ?? ""
-        guard let port = NWEndpoint.Port(portStr) else { return nil }
-        let ep = NWEndpoint.hostPort(host: NWEndpoint.Host(host), port: port)
+        guard NWEndpoint.Port(portStr) != nil else { return nil }
+        let ep = NWHostEndpoint(host: host, port: portStr)
         let session = createUDPSession(to: ep, from: nil)
-        session.setReadHandler { [weak self] datagrams, err in
-            guard let self, err == nil else { return }
+        session.setReadHandler { [weak self] (datagrams: [Data]?, err: Error?) in
+            guard let self, err == nil, let datagrams else { return }
             for d in datagrams {
                 self.processInbound(d, local: local, remote: remote)
             }
